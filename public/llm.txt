@@ -1,0 +1,32 @@
+# Le Nouvelle Vague - French New Wave Cinema Archive
+
+> A curated cinematic experience dedicated to the disruptive film movement that revolutionized world cinema between 1958 and 1970.
+
+## Project Vision
+"Le Nouvelle Vague" is a professionally designed web archive built with a "Noir" aesthetic. It serves as a comprehensive resource for the films, directors, and actors of the French New Wave movement, emphasizing auteur theory, experimental storytelling, and historical accuracy.
+
+## Key Content
+- **Films (1958-1970)**: A hand-picked selection of French masterpieces, including works by Godard, Truffaut, Resnais, and Varda.
+- **Directors**: Profiles of the visionaries who challenged cinematic conventions.
+- **Iconic Cast**: Biographies and filmographies of the actors and actresses who defined the era's visual language.
+- **Era Filtering**: Strict content restrictions ensure all data belongs to the 1958-1970 period.
+
+## Core Features
+- **Noir Aesthetic**: High-contrast, monochrome design with cinematic transitions.
+- **Time-Travel Search**: Search functionality restricted to the movement's peak years.
+- **TMDB Integration**: Dynamic data fetching powered by The Movie Database API.
+- **Responsive Experience**: Optimized for all devices, from mobile to 4K displays.
+
+## Technical Stack
+- React 18
+- Vite
+- Framer Motion
+- TypeScript
+- Vanilla CSS with Design Tokens
+
+## Project Support
+This project is an open-source homage to cinematic art.
+Support the developer: [ko-fi.com/josealvarezdev](https://ko-fi.com/josealvarezdev)
+
+---
+© 2026 Jose Alvarez Dev. All Rights Reserved. Data provided by TMDB.

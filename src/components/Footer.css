@@ -1,0 +1,112 @@
+.footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: var(--spacing-3xl) 0 var(--spacing-xl);
+    margin-top: var(--spacing-4xl);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.footer-section h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-section h4 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-section p {
+    color: var(--color-gray-300);
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-links a {
+    color: var(--color-gray-300);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--color-white);
+}
+
+.tmdb-attribution-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.tmdb-logo {
+    width: 60px;
+    height: auto;
+}
+
+.tmdb-attribution {
+    font-size: 0.8rem;
+    color: var(--color-gray-400);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-gray-700);
+    color: var(--color-gray-400);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+}
+
+.ko-fi-link {
+    color: #4CAF50;
+    /* A nicer green */
+    font-weight: bold;
+    text-decoration: none;
+    animation: blink 1.5s infinite;
+}
+
+.ko-fi-link:hover {
+    color: #2E7D32;
+    text-decoration: underline;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: #4CAF50;
+    }
+
+    50% {
+        opacity: 0.5;
+        color: #00ff00;
+    }
+
+    100% {
+        opacity: 1;
+        color: #4CAF50;
+    }
+}

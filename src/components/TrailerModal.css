@@ -1,0 +1,83 @@
+.trailer-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-modal);
+    padding: var(--spacing-lg);
+    animation: fadeIn var(--transition-base) ease-out;
+}
+
+.trailer-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    animation: slideUp var(--transition-base) ease-out;
+}
+
+.trailer-modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-fast);
+    z-index: 1;
+}
+
+.trailer-modal-close:hover {
+    transform: scale(1.1);
+}
+
+.trailer-modal-close svg {
+    width: 32px;
+    height: 32px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .trailer-modal-overlay {
+        padding: var(--spacing-md);
+    }
+
+    .trailer-modal-close {
+        top: -40px;
+    }
+
+    .trailer-modal-close svg {
+        width: 24px;
+        height: 24px;
+    }
+}

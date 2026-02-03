@@ -1,0 +1,85 @@
+.person-card {
+    background-color: transparent;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    height: 100%;
+    aspect-ratio: 3 / 4;
+    border: 1px solid var(--glass-border);
+}
+
+.person-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.person-card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.person-photo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-gray-900);
+}
+
+.person-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.person-photo.is-placeholder {
+    object-fit: contain;
+    padding: var(--spacing-xl);
+    background-color: var(--color-gray-900);
+}
+
+.person-card:hover .person-photo {
+    transform: scale(1.1);
+}
+
+.person-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--spacing-md);
+    background: var(--glass-bg-dark);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-top: 1px solid var(--glass-border);
+    transition: all var(--transition-base);
+    z-index: 2;
+    text-align: center;
+}
+
+.person-name {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.person-role {
+    color: var(--color-gray-300);
+    font-size: 0.85rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://JoseAlvarezDev.github.io/Le_nouvelle_vague/sitemap.xml
+

@@ -1,0 +1,81 @@
+.director-detail-content {
+    padding: var(--spacing-3xl) 0;
+}
+
+.director-header {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: var(--spacing-3xl);
+    margin-bottom: var(--spacing-4xl);
+}
+
+.profile-photo {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2xl);
+}
+
+.person-name-detail {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-lg);
+}
+
+.person-meta {
+    margin-bottom: var(--spacing-xl);
+}
+
+.meta-info {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-gray-300);
+    margin-bottom: var(--spacing-sm);
+}
+
+.meta-info strong {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.biography {
+    margin-top: var(--spacing-2xl);
+}
+
+.biography h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-white);
+}
+
+.biography p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-gray-300);
+    white-space: pre-line;
+}
+
+.filmography-section {
+    margin-top: var(--spacing-4xl);
+}
+
+.filmography-section h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.filmography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .director-header {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .filmography-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: var(--spacing-md);
+    }
+}
