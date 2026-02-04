@@ -39,7 +39,7 @@ const MovieCard = ({ movie, index = 0 }: MovieCardProps) => {
             <Link to={`/movie/${movie.id}`} className="movie-card-link">
                 <div className="movie-poster-wrapper">
                     <img
-                        src={hasError ? '/no_image.png' : getImageUrl(movie.poster_path, 'w500')}
+                        src={hasError ? `${import.meta.env.BASE_URL}no_image.png` : getImageUrl(movie.poster_path, 'w500')}
                         alt={movie.title}
                         className={`movie-poster ${hasError ? 'is-placeholder' : ''}`}
                         loading="lazy"

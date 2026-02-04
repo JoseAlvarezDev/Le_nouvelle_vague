@@ -93,7 +93,7 @@ const DirectorDetail = () => {
                                 className="profile-photo"
                                 onError={(e) => {
                                     const target = e.target as HTMLImageElement;
-                                    target.src = '/no_image.png';
+                                    target.src = `${import.meta.env.BASE_URL}no_image.png`;
                                 }}
                             />
                         </div>

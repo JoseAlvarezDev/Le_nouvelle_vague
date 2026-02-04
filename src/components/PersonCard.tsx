@@ -33,7 +33,7 @@ const PersonCard = ({ person, index = 0 }: PersonCardProps) => {
             <Link to={`/director/${person.id}`} className="person-card-link">
                 <div className="person-photo-wrapper">
                     <img
-                        src={hasError ? '/no_image.png' : getProfileUrl(person.profile_path, 'h632')}
+                        src={hasError ? `${import.meta.env.BASE_URL}no_image.png` : getProfileUrl(person.profile_path, 'h632')}
                         alt={person.name}
                         className={`person-photo ${hasError ? 'is-placeholder' : ''}`}
                         loading="lazy"
