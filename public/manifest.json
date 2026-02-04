@@ -1,7 +1,7 @@
 {
     "name": "Le Nouvelle Vague",
     "short_name": "Nouvelle Vague",
-    "description": "Explora el movimiento cinematográfico de Le Nouvelle Vague",
+    "description": "Explore the cinematic movement of Le Nouvelle Vague",
     "start_url": "./",
     "display": "standalone",
     "background_color": "#FFFFFF",

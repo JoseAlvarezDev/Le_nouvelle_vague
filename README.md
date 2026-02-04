@@ -55,7 +55,7 @@ A high-end, professionally designed web application dedicated to the **French Le
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/JoseAlvarezDev/Le_nouvelle_vague.git
    cd le-nouvelle-vague
    ```
 
